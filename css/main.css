@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+  align-items: center;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -32,6 +37,7 @@ h1 {
 .title {
   font-size: 2rem;
   display: flex;
+  justify-content: space-between;
   font-weight: bold;
   background-color: #d05c2e;
   color: #fff;
@@ -44,10 +50,9 @@ h1 {
   width: 50%;
   padding: 0;
   display: flex;
-  flex-direction: row;
 }
 
-.image {
+img {
   padding: .5em 0;
   display: flex;
   align-content: center;
@@ -55,19 +60,26 @@ h1 {
   max-width: 40px;
 }
 
-.navigation li {
+.navigation {
+  list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: row;
   margin: 0;
   font-size: 1.125rem;
-  border: solid;
-  padding: .5em;
-  border-color: #a63f38;
+  padding: 0;
+  border-top: 2px solid #a63f38;
+  border-bottom: 2px solid #a63f38;
   border-width: thin;
-  text-decoration: none;
-  color: #fff;
+}
+
+ul li {
+  width: 33.33%;
+  border-right: 2px solid #a63f38;
+}
+
+ul li:last-child {
+  border: none;
 }
 
 nav, ul {
@@ -75,9 +87,10 @@ nav, ul {
   margin: 2.84em;
 }
 
-a {
+.navigation a {
+  width: 100%;
+  padding: .4rem 0;
   text-decoration: none;
-  list-style-type: none;
   color: #fff;
 }
 
