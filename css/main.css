@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: Merriweather, serif;
+  font-family: "Merriweather", serif;
   line-height: 1.5;
 }
 
@@ -10,61 +10,28 @@ html {
 
 body {
   margin: 0;
-  align-items: center;
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-}
-
-header div {
-  width: 50%;
-  padding: .5em;
-  margin: 0;
-}
-
-div {
-  align-content: center;
-  margin-left: 8em;
-}
-
-h1 {
-  text-align: center;
+  background-color: #d05c2e;
+  color: #fff;
 }
 
 .title {
-  font-size: 2rem;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  font-weight: bold;
-  background-color: #d05c2e;
-  color: #fff;
-  flex-wrap: wrap;
-  max-width: 100%;
-  margin: 0;
-}
-
-.title div {
-  width: 50%;
-  padding: 0;
-  display: flex;
+  padding: .5em 0;
 }
 
 img {
-  padding: .5em 0;
-  display: flex;
-  align-content: center;
-  flex-direction: row;
-  max-width: 40px;
+  width: 40px;
 }
 
 .navigation {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  text-align: center;
   margin: 0;
   font-size: 1.125rem;
   padding: 0;
@@ -82,19 +49,15 @@ ul li:last-child {
   border: none;
 }
 
-nav, ul {
-  width: 50%;
-  margin: 2.84em;
-}
-
 .navigation a {
+  display: block;
   width: 100%;
   padding: .4rem 0;
   text-decoration: none;
   color: #fff;
 }
 
-.navigation li:hover {
+.navigation a:hover {
   background-color: #a63f38;
   color: #fff;
 }
